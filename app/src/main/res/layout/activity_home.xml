@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrsshimaa.mobileapp.Home">
+
+    <FrameLayout
+
+        android:id="@+id/framegroup"
+
+
+        android:layout_width="360dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="389dp"
+
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="showGroup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameintensive"
+        android:layout_width="177dp"
+        android:layout_height="155dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#4db6ac"
+        android:clickable="true"
+        android:onClick="showIntensive"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/frameblood"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introimg">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameblood"
+
+        android:layout_width="177dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="0dp"
+        android:background="#4db6ac"
+        android:clickable="true"
+        android:onClick="showBlood"
+        app:layout_constraintBottom_toTopOf="@+id/grouptxt"
+        app:layout_constraintTop_toBottomOf="@+id/introimg"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameupper"
+
+        android:layout_width="361dp"
+        android:layout_height="236dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="2dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/Introtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:fontFamily="cursive"
+        android:text="We Always care"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/intensivetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Intensive Care"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <ImageView
+        android:id="@+id/introimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Introtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Introtext"
+        app:srcCompat="@drawable/care" />
+
+
+    <TextView
+        android:id="@+id/bloodtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Blood Donation"
+        android:textColor="@color/colorAccent"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/frameblood"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TextView
+        android:id="@+id/grouptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group Therapy"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+    <ImageView
+        android:id="@+id/intensiveimg"
+        android:layout_width="105dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/patient"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodtxt"
+        app:srcCompat="@drawable/patient" />
+
+    <ImageView
+        android:id="@+id/bloodimg"
+        android:layout_width="104dp"
+        android:layout_height="88dp"
+        android:layout_marginRight="91dp"
+
+        android:layout_marginTop="9dp"
+        app:layout_constraintRight_toLeftOf="@+id/intensiveimg"
+        app:layout_constraintTop_toBottomOf="@+id/bloodtxt"
+        app:srcCompat="@drawable/blooddonation" />
+
+    <ImageView
+        android:id="@+id/groupimg"
+        android:layout_width="118dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/love" />
+
+</android.support.constraint.ConstraintLayout>

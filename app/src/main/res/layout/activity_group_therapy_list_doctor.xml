@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrsshimaa.mobileapp.GroupTherapyListDoctor">
+    <FrameLayout
+        android:id="@+id/patientsbtn"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="showPatientslist"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/patientsbtntitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Patients"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/groupsbtn"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:onClick="showGroupslist"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/groupsbtntitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Groups"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/addgroupicon"
+            android:layout_width="23dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="14dp"
+            android:onClick="createGroup"
+            app:srcCompat="@drawable/addwhite" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/patientslist"
+        android:layout_width="325dp"
+        android:layout_height="406dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorsbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <FrameLayout
+        android:id="@+id/profileandnotbar"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-15dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="-17dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/profileicon"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="150dp"
+            android:onClick="Gotoprofile"
+            app:srcCompat="@drawable/usermaleicon" />
+
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

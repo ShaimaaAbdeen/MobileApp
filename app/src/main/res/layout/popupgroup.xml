@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grouptherapyimage"
+
+    android:orientation="vertical"
+    android:padding="10px"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/end_data_send_button_group"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedbutton"
+        android:drawablePadding="3sp"
+        android:text="X"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/grouptextintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.22"
+
+        android:paddingLeft="10sp"
+        android:text="Have you ever wanted to go to a group therapy but you didn't have enough courage ?.
+We truly believe that a person's spirit is very important and we know people feel better when talking about their problems, they like it when they find others sharing with them the same feelings, they like it when they're not alone.
+If you suffer from a disease and you want to talk it out with someone who passed by your same situation, we're here to help you do that.
+Join us and keep your spirit high! :).
+"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/gotogrouppage"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:onClick="Gotogrouppage"
+        android:text="Go to page"
+        android:textColor="#F44336" />
+
+
+</LinearLayout>

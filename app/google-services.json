@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "600612634845",
+    "firebase_url": "https://grouptherapy-197800.firebaseio.com",
+    "project_id": "grouptherapy-197800",
+    "storage_bucket": "grouptherapy-197800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600612634845:android:7d34e2222d03d030",
+        "android_client_info": {
+          "package_name": "com.example.mrsshimaa.chatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600612634845-5akosofn8jled8e7t88tec3s80q4pae2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC32CPSg04HMU5gVEeBbceswStkC7lCl58"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600612634845:android:31acf264813e217a",
+        "android_client_info": {
+          "package_name": "com.example.mrsshimaa.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600612634845-5akosofn8jled8e7t88tec3s80q4pae2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC32CPSg04HMU5gVEeBbceswStkC7lCl58"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

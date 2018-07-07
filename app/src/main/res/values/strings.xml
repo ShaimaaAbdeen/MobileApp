@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GradPro</string>
+    <string name="title_activity_hospital_location">Map</string>
+    <string name="title_activity_hospital_loc">Map</string>
+</resources>

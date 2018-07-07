@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bloodbankimage"
+
+    android:orientation="vertical"
+    android:padding="10px"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/end_data_send_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedbutton"
+        android:drawablePadding="3sp"
+        android:text="X"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/bloodtextintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.22"
+
+        android:paddingLeft="10sp"
+        android:text="The blood you donate gives someone another chance at life.One day that one may be a close relative, a friend , a loved one ...or even you.
+If you're willing to help people in need, then you're at the right place, just sign up and we will connect you to any hospital in need for your donation.
+
+Don't hesitate, you might be the rescue for someone now...Join our family and be the good you want to see."
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/Gotobloodpage"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="Gotobloodpage"
+        android:text="Go To Page"
+        android:textColor="@color/colorPrimary" />
+
+
+</LinearLayout>

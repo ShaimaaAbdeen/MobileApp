@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundedrectmint"
+
+    >
+
+    <LinearLayout
+        android:layout_width="355dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/end_data_send_button_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/roundedbutton"
+            android:drawablePadding="3sp"
+            android:text="X"
+            android:textSize="14sp" />
+    <TextView
+        android:id="@+id/sunday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Sunday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/beginsun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+        <TextView
+            android:id="@+id/setbegintimesun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:onClick="timePicker"
+            android:text="Set time"
+
+            android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/endsun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/settimeendsun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"
+        />
+
+    <TextView
+        android:id="@+id/monday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Monday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/beginmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+
+    <TextView
+        android:id="@+id/setbegintimemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/endmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/setendtimemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/tuesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tuesday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/begintues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+    <TextView
+        android:id="@+id/setbegintimetues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/endtues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/setendtimetues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time" />
+
+    <TextView
+        android:id="@+id/Wednesday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Wednesday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/beginwed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+    <TextView
+        android:id="@+id/setbegintimewed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/endwed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/setendtimewed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/Thursday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Thursday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/beginthurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+    <TextView
+        android:id="@+id/setbegintimethurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/endthurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/setendtimethurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+    <TextView
+        android:id="@+id/Friday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Friday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/beginfri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+    <TextView
+        android:id="@+id/setbegintimefri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/endfri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/setendtimefri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+    <TextView
+        android:id="@+id/Saturday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Saturday"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/beginsat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="Begin" />
+
+    <TextView
+        android:id="@+id/setbegintimesat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time"  />
+
+    <TextView
+        android:id="@+id/endsat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/setendtimesat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="timePicker"
+        android:text="Set time" />
+
+        <Button
+            android:id="@+id/end_data_send_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/ovalbuttonblue"
+            android:drawablePadding="3sp"
+            android:text="Done"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

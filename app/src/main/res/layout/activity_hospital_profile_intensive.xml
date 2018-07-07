@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.mrsshimaa.mobileapp.HospitalProfileBlood">
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="111dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="34dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hospitaluser" />
+
+    <TextView
+        android:id="@+id/hospitalname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="69dp"
+        android:elevation="1dp"
+        android:text="Hospital Name"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/profilepic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="325dp"
+        android:layout_height="372dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+
+        android:background="@drawable/roundedrect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="131dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/popup_element"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/roundedrectmint"
+                android:orientation="vertical"
+                android:padding="10px"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/hospitaladdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.01"
+                    android:text="Address"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hospitaladdresstext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.01"
+
+                    android:text="hospital address" />
+
+                <TextView
+                    android:id="@+id/hospitalemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.01"
+                    android:text="Email"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hospitalemailtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.01"
+
+                    android:text="hospital email" />
+
+                <TextView
+                    android:id="@+id/contactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.01"
+                    android:text="Contact Number"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hospitalcontacttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.01"
+
+                    android:text="hospital contact" />
+
+                <TextView
+                    android:id="@+id/rooms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.01"
+
+                    android:text="Rooms"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:layout_width="319dp"
+                    android:layout_height="150dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <TextView
+                        android:id="@+id/pediatricroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/postunit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="125dp"
+                        android:layout_weight="0.01"
+                        android:text="Post-anesthesia Care Unit:"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/coronaryroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="117dp"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/generalroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/neonatalroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="93dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/psychiatricroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/psychiatricicu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_weight="0.01"
+                        android:text="Psychiatric ICU:"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/neurologicalroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="107dp"
+                        android:layout_marginTop="105dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/neurologicalicu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="105dp"
+                        android:layout_weight="0.01"
+                        android:text="Neurological ICU:"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/pediatricicu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_weight="0.01"
+                        android:text="Pediatric ICU:"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/neonatalicu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="0.01"
+                        android:text="Neonatal ICU :"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/coronaryunit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="85dp"
+                        android:layout_weight="0.01"
+                        android:text="Coronary Care Unit:"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/generalicu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.01"
+                        android:text="General/Surgical ICU:"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/postanesthesiaroomsnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="148dp"
+                        android:layout_marginTop="125dp"
+                        android:layout_weight="0.01"
+                        android:text="None"
+                        android:textColor="#fd0000"
+                        android:textSize="10sp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="35dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="291dp"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="166dp"
+        android:onClick="getLocation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
+
+
+</android.support.constraint.ConstraintLayout>

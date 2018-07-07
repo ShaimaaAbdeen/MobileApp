@@ -1,0 +1,151 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/roundedrectmint">
+
+            <ImageView
+                android:id="@+id/originimage"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/placeholders" />
+
+            <EditText
+                android:id="@+id/origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Enter Origin Address"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/path"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/road" />
+
+        <FrameLayout
+            android:layout_width="128dp"
+            android:layout_height="112dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/roundedrectmint">
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Enter dest. Address"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/destinationimage"
+                android:layout_width="58dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/flag" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/distanceimg"
+            android:layout_width="78dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/distance" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.38"
+            android:text="0.0 km" />
+
+        <Button
+            android:id="@+id/findpath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/roundedrectmint"
+            android:text="Find Path"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/timeimg"
+            android:layout_width="50dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/clock"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.42"
+            android:text="00 mins" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="372dp"
+        android:layout_height="347dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.90"
+        tools:context="com.example.mrsshimaa.mobileapp.HospitalLocation" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/intesnivecareimage"
+
+    android:orientation="vertical"
+    android:padding="10px"
+    android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/end_data_send_button_intensive"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedbutton"
+        android:drawablePadding="3sp"
+        android:text="X"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/intensivetextintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.22"
+
+        android:paddingLeft="10sp"
+        android:paddingTop="30dp"
+        android:text="Intensive care is a major problem in our country because when someone you love is in urgent need for a bed, time would be very valuable, you won't be accepting people in hospitals telling you..sorry there's no place for you.
+That's why we're here for you, just one click would bring to you all hospitals with available beds at the moment and the nearest one of them to you.
+With us there's always a place for you.
+
+"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/checkhospitals"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="checkHospitals"
+        android:text="Check Hospitals"
+        android:textColor="@color/colorPrimary" />
+
+
+</LinearLayout>

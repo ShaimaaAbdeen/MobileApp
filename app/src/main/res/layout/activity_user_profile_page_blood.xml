@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.mrsshimaa.mobileapp.UserProfilePageBlood">
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="111dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="34dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userm" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="71dp"
+        android:text="Shaimaa Tarek"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="332dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+
+        android:background="@drawable/roundedrect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <FrameLayout
+            android:layout_width="313dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="75dp"
+            android:background="@color/colorPrimary"
+            android:onClick="basicInfo">
+
+            <TextView
+                android:id="@+id/basicinfotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:text="Basic Info"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="313dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="145dp"
+            android:background="@color/colorPrimary"
+            android:onClick="bloodInfo">
+
+            <TextView
+                android:id="@+id/donationinfotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:text="Blood Info"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="313dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="215dp"
+            android:background="@color/colorPrimary"
+            android:onClick="other">
+
+            <TextView
+                android:id="@+id/otherinfotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dp"
+                android:text="Other "
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/basicinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/consultantwhite" />
+
+        <ImageView
+            android:id="@+id/donationinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            app:srcCompat="@drawable/dropwhite" />
+
+        <ImageView
+            android:id="@+id/otherinfro"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="220dp"
+            app:srcCompat="@drawable/addwhite" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/changepp"
+        android:layout_width="19dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="127dp"
+        android:onClick="choosePhoto"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photocamera" />
+
+</android.support.constraint.ConstraintLayout>
